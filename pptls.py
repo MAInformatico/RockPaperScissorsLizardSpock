@@ -3,7 +3,7 @@
 import random
 
 v=['piedra','papel','tijera','largarto','spock'] #valores posibles
-ajug=input("Escriba el numero correspondiente al arma elegida: 0-piedra, 1-papel, 2-tijera, 3-lagarto o 4-spock ")
+ajug=input("Pulse el numero correspondiente al arma elegida: 0-piedra, 1-papel, 2-tijera, 3-lagarto o 4-spock ")
 jug1=v[ajug]
 def aleatoria(v):
 	b=random.randint(0, 4)
@@ -124,4 +124,3 @@ def spock(jug1,jug2):
 
 
 Juego(jug1,jug2)
-
