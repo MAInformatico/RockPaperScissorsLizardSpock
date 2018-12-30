@@ -2,8 +2,8 @@
 
 import random
 
-v=['piedra','papel','tijera','largarto','spock'] #valores posibles
-ajug=input("Pulse el numero correspondiente al arma elegida: 0-piedra, 1-papel, 2-tijera, 3-lagarto o 4-spock ")
+v=['rock','paper','scissors','lizard','Spock'] #valores posibles
+ajug=input("Press the number key corresponding to the selected weapon: (0) Rock | (1) Paper | (2) Scissors | (3) Lizard | (4) Spock ")
 jug1=v[ajug]
 def aleatoria(v):
 	b=random.randint(0, 4)
@@ -11,116 +11,106 @@ def aleatoria(v):
 
 a=aleatoria(v)
 jug2=v[a]
-#ARMAS ESCOGIDAS POR EL JUGADOR Y LA MAQUINA
 
-def Juego(jug1,jug2): #Definimos el juego
+def Game(jug1,jug2):
 	if jug1==v[0]:
-		piedra(jug1,jug2)
+		rock(jug1,jug2)
 	else:
 		if jug1==v[1]:
-			papel(jug1,jug2)
+			paper(jug1,jug2)
 		else:
 			if jug1==v[2]:
-				tijera(jug1,jug2)
+				scissors(jug1,jug2)
 			else:
 				if jug1==v[3]:
-					lagarto(jug1,jug2)
+					Lizard(jug1,jug2)
 				else:
 					if jug1==v[4]:
 						spock(jug1,jug2)
-#Fin def juego
 
-#Reglas del juegp
-def piedra(jug1,jug2):
+#Game rules
+def rock(jug1,jug2):
 		if jug2==v[3]:
-			print "Piedra lapida lagarto"
+			print "Rock lapida Lizard"
 		else:
 			if jug2==v[2]:
-				print "Piedra aplasta tijera"
+				print "Rock crusher scissors"
 			else:		#derrotas
 				if jug2==v[1]:
-					print "Papel tapa piedra"
+					print "Paper cover rock"
 				else:
 					if jug2==v[4]:
-						print "Spock vaporiza piedra"
+						print "Spock vaporizes rock"
 					else:
 						if jug1==v[0] and jug2==v[0]:
-							print "Empate"
+							print "Draw"
 
-#FIN DE LA PIEDRA
 
-def papel(jug1,jug2):
+def paper(jug1,jug2):
 		if jug2==v[0]:
-			print "Papel tapa piedra"
+			print "Paper cover rock"
 		else:
 			if jug2==v[4]:
-				print "Papel desautoriza Spock"
+				print "Paper desauthorizes Spock"
 			else:		#derrotas
 				if jug2==v[2]:
-					print "Tijera corta papel"
+					print "Scissors cuts paper"
 				else:
 					if jug2==v[3]:
-						print "Lagarto come papel"
+						print "Lizard eats paper"
 					else:
 						if jug1==v[1] and jug2==v[1]:
-							print "Empate"
+							print "Draw"
 
-#FIN DEL PAPEL
 
-def tijera(jug1,jug2):
+def scissors(jug1,jug2):
 		if jug2==v[3]:
-			print "Tijera decapita lagarto"
+			print "Scissors decapitates Lizard"
 		else:
 			if jug2==v[1]:
-				print "Tijera corta papel"
+				print "Scissors cuts paper"
 			else:		#derrotas
 				if jug2==v[0]:
-					print "Piedra aplasta tijera"
+					print "Rock crusher scissors"
 				else:
 					if jug2==v[4]:
-						print "Spock rompe tijera"
+						print "Spock rompe scissors"
 					else:
 						if jug1==v[2] and jug2==v[2]:
-							print "Empate"
+							print "Draw"
 
-#FIN DEL TIJERA
-
-def lagarto(jug1,jug2):
+def Lizard(jug1,jug2):
 		if jug2==v[1]:
-			print "Lagarto come papel"
+			print "Lizard eats paper"
 		else:
 			if jug2==v[4]:
-				print "Lagarto envenena Spock"
+				print "Lizard poison Spock"
 			else:		#derrotas
 				if jug2==v[2]:
-					print "Tijera decapita lagarto"
+					print "Scissors decapitates Lizard"
 				else:
 					if jug2==v[0]:
-						print "Piedra lapida lagarto"
+						print "Rock lapida Lizard"
 					else:
 						if jug1==v[3] and jug2==v[3]:
-							print "Empate"
-
-#FIN DE LAGARTO
+							print "Draw"
 
 def spock(jug1,jug2):
 		if jug2==v[0]:
-			print "Spock vaporiza piedra"
+			print "Spock vaporizes rock"
 		else:
 			if jug2==v[2]:
-				print "Spock rompe tijera"
+				print "Spock breaks scissors"
 			else:		#derrotas
 				if jug2==v[1]:
-					print "Papel desautoriza Spock"
+					print "Paper desauthorized Spock"
 				else:
 					if jug2==v[3]:
-						print "Lagarto envenena Spock"
+						print "Lizard poison Spock"
 					else:
 						if jug1==v[4] and jug2==v[4]:
-							print "Empate"
-
-#FIN DE SPOCK
+							print "Draw"
 
 
+Game(jug1,jug2)
 
-Juego(jug1,jug2)
