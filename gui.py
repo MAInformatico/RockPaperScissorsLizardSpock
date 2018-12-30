@@ -24,13 +24,10 @@ menu.add_cascade(label="Help", menu=helpmenu)
 helpmenu.add_command(label="About", command=About)
 
 #b1=Button(root,text="")
-b1=Button(root,text="Prueba",command=lambda: ejecutar(mostrar(root)) or imprimir("hola"))
+b1=Button(root,text="Start",command=lambda: ejecutar(mostrar(root)) or imprimir("hi"))
 b1.pack() 
 
-def mostrar(ventana): ventana.deiconify() # Muestra una ventana
-def ocultar(ventana):ventana.withdraw() # Oculta una ventana
-def ejecutar(f): root.after(200,f) # Una forma de ejecutar las funciones
-def imprimir(texto): print "texto" # Imprime un texto
+def imprimir(texto): print "text" # Imprime un texto
 
 
 
