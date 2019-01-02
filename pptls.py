@@ -2,7 +2,7 @@
 
 import random
 
-v=['rock','paper','scissors','lizard','Spock'] #valores posibles
+v=['rock','paper','scissors','lizard','Spock']
 ajug=input("Press the number key corresponding to the selected weapon: (0) Rock | (1) Paper | (2) Scissors | (3) Lizard | (4) Spock ")
 jug1=v[ajug]
 def aleatoria(v):
@@ -113,4 +113,3 @@ def spock(jug1,jug2):
 
 
 Game(jug1,jug2)
-
