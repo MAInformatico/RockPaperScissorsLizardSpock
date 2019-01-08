@@ -1,9 +1,9 @@
-from tkinter import * # Importamos los widgets de Tkinter
+from tkinter import *
 
 def About():
     print ("This game is under GPL License. Developed by MAInformatico")
 
-def imprimir(texto): print ("text") # Imprime un texto
+def imprimir(t): print (t) # Imprime un texto
 
 root = Tk() # Creamos la raíz y se crea un bucle 
 root.title("Rock Paper Scissors Lizard Spock")
