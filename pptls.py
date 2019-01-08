@@ -25,7 +25,7 @@ def rock(jug1,jug2):
 		else:
 			if jug2==v[2]:
 				print ("Rock crusher scissors")
-			else:		#derrotas
+			else:		#defeat
 				if jug2==v[1]:
 					print ("Paper cover rock")
 				else:
@@ -42,7 +42,7 @@ def paper(jug1,jug2):
 		else:
 			if jug2==v[4]:
 				print ("Paper desauthorizes Spock")
-			else:		#derrotas
+			else:		#defeat
 				if jug2==v[2]:
 					print ("Scissors cuts paper")
 				else:
@@ -59,7 +59,7 @@ def scissors(jug1,jug2):
 		else:
 			if jug2==v[1]:
 				print ("Scissors cuts paper")
-			else:		#derrotas
+			else:		#defeat
 				if jug2==v[0]:
 					print ("Rock crusher scissors")
 				else:
@@ -75,7 +75,7 @@ def Lizard(jug1,jug2):
 		else:
 			if jug2==v[4]:
 				print ("Lizard poison Spock")
-			else:		#derrotas
+			else:		#defeat
 				if jug2==v[2]:
 					print ("Scissors decapitates Lizard")
 				else:
@@ -91,7 +91,7 @@ def spock(jug1,jug2):
 		else:
 			if jug2==v[2]:
 				print ("Spock breaks scissors")
-			else:		#derrotas
+			else:		#defeat
 				if jug2==v[1]:
 					print ("Paper desauthorized Spock")
 				else:
